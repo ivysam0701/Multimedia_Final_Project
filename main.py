@@ -1,5 +1,6 @@
 import pygame
 import sys
+from player import PlayerModule
 
 # 基礎解析度設定
 WIDTH, HEIGHT = 800, 600
@@ -43,5 +44,5 @@ class GameEngine:
 
 if __name__ == "__main__":
     game = GameEngine()
-    # 未來只需在這裡 game.add_module(新功能) 即可
+    game.add_module(PlayerModule())
     game.run()
